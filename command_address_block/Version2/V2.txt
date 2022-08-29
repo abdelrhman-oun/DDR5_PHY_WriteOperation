@@ -1,0 +1,9 @@
+command address version 2 is the same as version 1 add some modification to synthsis script.
+
+synthsis is done on design compiler and formality is done also.
+then the code is prototyped on FPGA kit.
+
+description : COMMAND ADDRESS block is used to forward the command from
+              the PHY interface to the DRAM interface and extract some
+              info from mode register write (MRW) command like pre-amble,
+              post-amble and CRC enable.
