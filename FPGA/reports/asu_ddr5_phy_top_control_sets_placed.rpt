@@ -1,0 +1,64 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Fri May 27 22:56:19 2022
+| Host         : DESKTOP-SQC9QGB running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file asu_ddr5_phy_top_control_sets_placed.rpt
+| Design       : asu_ddr5_phy_top
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    11 |
+| Minimum Number of register sites lost to control set restrictions |    37 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |              25 |            9 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               4 |            1 |
+| Yes          | No                    | Yes                    |             101 |           54 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------+---------------------------------------------+--------------------------+------------------+----------------+
+|   Clock Signal   |                Enable Signal                |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++------------------+---------------------------------------------+--------------------------+------------------+----------------+
+|  clk_i_IBUF_BUFG |                                             |                          |                1 |              1 |
+|  clk_i_IBUF_BUFG | WR_U/write_fsm_U/gap_value_reg[3][0]        | CA_U/dram_crc_en_o_reg_0 |                1 |              4 |
+|  clk_i_IBUF_BUFG | WR_U/write_fsm_U/counter_reg[0][0]          | CA_U/dram_crc_en_o_reg_0 |                3 |              4 |
+|  clk_i_IBUF_BUFG | WR_U/write_fsm_U/counter_preamble_reg[3][0] | CA_U/dram_crc_en_o_reg_0 |                2 |              4 |
+|  clk_i_IBUF_BUFG | WR_U/wirte_counters_U/E[0]                  |                          |                1 |              4 |
+|  clk_i_IBUF_BUFG | CA_U/pre_cycle_o[1]_i_1_n_0                 | CA_U/dram_crc_en_o_reg_0 |                1 |              4 |
+|  clk_i_IBUF_BUFG | CA_U/operation[7]_i_1_n_0                   | CA_U/dram_crc_en_o_reg_0 |                4 |              6 |
+|  clk_i_IBUF_BUFG | WR_U/write_fsm_U/E[0]                       | CA_U/dram_crc_en_o_reg_0 |                8 |              8 |
+|  clk_i_IBUF_BUFG | CA_U/mode_register_0                        | CA_U/dram_crc_en_o_reg_0 |                2 |              8 |
+|  clk_i_IBUF_BUFG |                                             | CA_U/dram_crc_en_o_reg_0 |                9 |             25 |
+|  clk_i_IBUF_BUFG | enable_i_IBUF                               | CA_U/dram_crc_en_o_reg_0 |               33 |             63 |
++------------------+---------------------------------------------+--------------------------+------------------+----------------+
+
+
