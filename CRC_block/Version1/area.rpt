@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : crc
+Version: K-2015.06
+Date   : Sun Apr 17 11:18:35 2022
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/IC/tsmc_fb_cl013g_sc/aci/sc-m/synopsys/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          143
+Number of nets:                          1588
+Number of cells:                         1390
+Number of combinational cells:           1082
+Number of sequential cells:               304
+Number of macros/black boxes:               0
+Number of buf/inv:                        245
+Number of references:                       4
+
+Combinational area:              12982.531247
+Buf/Inv area:                     1239.065114
+Noncombinational area:            6901.345339
+Macro/Black Box area:                0.000000
+Net Interconnect area:          470402.248505
+
+Total cell area:                 19883.876585
+Total area:                     490286.125090
+1
