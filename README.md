@@ -1,0 +1,2 @@
+# DDR5_PHY_WriteOperation
+Interfacing applications to the DDR memories is a challenge due to the several complexities associated with dealing with such high transfer rates at the physical level. DDR Physical Layer (DDR PHY) refers to the circuit responsible for such interface between the memory and the system using the memory. With every new generation, DDR memories support higher transfer rates. And with DDR5 the design challenge of the DDR PHYs is pushed even further.
