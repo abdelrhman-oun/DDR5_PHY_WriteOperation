@@ -1,0 +1,942 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : write_manager
+Version: K-2015.06
+Date   : Sun Apr 17 10:55:50 2022
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+  Startpoint: U2/o_gap_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U0/current_state_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U2/o_gap_reg[2]/CK (DFFHQX8M)                           0.00       0.00 r
+  U2/o_gap_reg[2]/Q (DFFHQX8M)                            0.41       0.41 r
+  U2/o_gap[2] (write_shift)                               0.00       0.41 r
+  U1/i_gap[2] (write_counters)                            0.00       0.41 r
+  U1/U45/Y (INVX4M)                                       0.30       0.71 f
+  U1/U191/Y (OR2X2M)                                      0.35       1.06 f
+  U1/U71/Y (AND3X6M)                                      0.26       1.31 f
+  U1/U70/Y (AO21X8M)                                      0.27       1.58 f
+  U1/U194/Y (NAND2BX8M)                                   0.20       1.78 f
+  U1/U76/Y (CLKNAND2X16M)                                 0.12       1.90 r
+  U1/U77/Y (AND3X12M)                                     0.19       2.10 r
+  U1/U79/Y (AND4X12M)                                     0.19       2.28 r
+  U1/U56/Y (NAND4X4M)                                     0.26       2.54 f
+  U1/U99/Y (AO21X8M)                                      0.34       2.89 f
+  U1/o_interamble (write_counters)                        0.00       2.89 f
+  U0/i_interamble (write_fsm)                             0.00       2.89 f
+  U0/U62/Y (OAI21X1M)                                     0.72       3.61 r
+  U0/U38/Y (AO21X8M)                                      0.31       3.92 r
+  U0/U34/Y (NAND3X12M)                                    0.13       4.05 f
+  U0/U36/Y (CLKAND2X16M)                                  0.18       4.23 f
+  U0/U23/Y (INVX6M)                                       0.11       4.34 r
+  U0/U49/Y (OAI221X4M)                                    0.21       4.55 f
+  U0/current_state_reg[0]/D (DFFRHQX4M)                   0.00       4.55 f
+  data arrival time                                                  4.55
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U0/current_state_reg[0]/CK (DFFRHQX4M)                  0.00       4.80 r
+  library setup time                                     -0.25       4.55
+  data required time                                                 4.55
+  --------------------------------------------------------------------------
+  data required time                                                 4.55
+  data arrival time                                                 -4.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: U0/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/counter_write_data_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[0]/CK (DFFRHQX4M)                  0.00       0.00 r
+  U0/current_state_reg[0]/Q (DFFRHQX4M)                   0.59       0.59 f
+  U0/U19/Y (INVX14M)                                      0.39       0.98 r
+  U0/U40/Y (INVXLM)                                       0.41       1.39 f
+  U0/U15/Y (NAND2X2M)                                     0.36       1.75 r
+  U0/U14/Y (NAND2X2M)                                     0.28       2.04 f
+  U0/o_post (write_fsm)                                   0.00       2.04 f
+  U1/i_post (write_counters)                              0.00       2.04 f
+  U1/U138/Y (NOR2X3M)                                     0.87       2.91 r
+  U1/U83/Y (NOR3BX4M)                                     0.56       3.46 r
+  U1/U19/Y (BUFX5M)                                       0.34       3.80 r
+  U1/U66/Y (NOR2BX8M)                                     0.19       4.00 f
+  U1/U34/Y (NOR2X2M)                                      0.43       4.42 r
+  U1/counter_write_data_reg[1]/D (DFFRQX4M)               0.00       4.42 r
+  data arrival time                                                  4.42
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/counter_write_data_reg[1]/CK (DFFRQX4M)              0.00       4.80 r
+  library setup time                                     -0.37       4.43
+  data required time                                                 4.43
+  --------------------------------------------------------------------------
+  data required time                                                 4.43
+  data arrival time                                                 -4.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: U0/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/counter_write_data_reg[3]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[0]/CK (DFFRHQX4M)                  0.00       0.00 r
+  U0/current_state_reg[0]/Q (DFFRHQX4M)                   0.59       0.59 f
+  U0/U19/Y (INVX14M)                                      0.39       0.98 r
+  U0/U40/Y (INVXLM)                                       0.41       1.39 f
+  U0/U15/Y (NAND2X2M)                                     0.36       1.75 r
+  U0/U14/Y (NAND2X2M)                                     0.28       2.04 f
+  U0/o_post (write_fsm)                                   0.00       2.04 f
+  U1/i_post (write_counters)                              0.00       2.04 f
+  U1/U138/Y (NOR2X3M)                                     0.87       2.91 r
+  U1/U83/Y (NOR3BX4M)                                     0.56       3.46 r
+  U1/U19/Y (BUFX5M)                                       0.34       3.80 r
+  U1/U66/Y (NOR2BX8M)                                     0.19       4.00 f
+  U1/U33/Y (NOR2X2M)                                      0.43       4.42 r
+  U1/counter_write_data_reg[3]/D (DFFRQX4M)               0.00       4.42 r
+  data arrival time                                                  4.42
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/counter_write_data_reg[3]/CK (DFFRQX4M)              0.00       4.80 r
+  library setup time                                     -0.37       4.43
+  data required time                                                 4.43
+  --------------------------------------------------------------------------
+  data required time                                                 4.43
+  data arrival time                                                 -4.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U2/o_gap_reg[3]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.66       0.66 r
+  U0/U25/Y (INVX16M)                                      0.26       0.91 f
+  U0/U12/Y (NAND2X4M)                                     0.31       1.22 r
+  U0/U31/Y (OR2X12M)                                      0.22       1.44 r
+  U0/U29/Y (NAND2X12M)                                    0.15       1.59 f
+  U0/o_data_state (write_fsm)                             0.00       1.59 f
+  U1/i_data_state (write_counters)                        0.00       1.59 f
+  U1/U49/Y (NAND3X2M)                                     0.31       1.90 r
+  U1/U7/Y (NOR2X4M)                                       0.19       2.08 f
+  U1/o_gap_done (write_counters)                          0.00       2.08 f
+  U2/i_gap_done (write_shift)                             0.00       2.08 f
+  U2/U3/Y (BUFX18M)                                       0.22       2.30 f
+  U2/U28/Y (NOR2X12M)                                     0.41       2.71 r
+  U2/U31/Y (NOR2BX2M)                                     0.98       3.69 r
+  U2/U4/Y (NOR2X8M)                                       0.25       3.93 f
+  U2/U11/Y (OAI2BB2X1M)                                   0.68       4.61 r
+  U2/o_gap_reg[3]/D (DFFQX4M)                             0.00       4.61 r
+  data arrival time                                                  4.61
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U2/o_gap_reg[3]/CK (DFFQX4M)                            0.00       4.80 r
+  library setup time                                     -0.18       4.62
+  data required time                                                 4.62
+  --------------------------------------------------------------------------
+  data required time                                                 4.62
+  data arrival time                                                 -4.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: U1/counter_write_data_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U0/current_state_reg[2]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U1/counter_write_data_reg[2]/CK (DFFRHQX2M)             0.00       0.00 r
+  U1/counter_write_data_reg[2]/Q (DFFRHQX2M)              0.77       0.77 r
+  U1/U101/Y (INVX2M)                                      0.56       1.33 f
+  U1/U156/Y (NOR3X6M)                                     0.86       2.19 r
+  U1/U169/Y (AND2X2M)                                     0.38       2.57 r
+  U1/o_wrdata_done (write_counters)                       0.00       2.57 r
+  U0/i_wrdata_done (write_fsm)                            0.00       2.57 r
+  U0/U9/Y (INVX2M)                                        0.39       2.96 f
+  U0/U27/Y (AOI32X4M)                                     0.46       3.42 r
+  U0/U47/Y (AND3X2M)                                      0.39       3.81 r
+  U0/U45/Y (NOR2X1M)                                      0.27       4.09 f
+  U0/U46/Y (NOR2X2M)                                      0.48       4.57 r
+  U0/current_state_reg[2]/D (DFFRHQX8M)                   0.00       4.57 r
+  data arrival time                                                  4.57
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U0/current_state_reg[2]/CK (DFFRHQX8M)                  0.00       4.80 r
+  library setup time                                     -0.22       4.58
+  data required time                                                 4.58
+  --------------------------------------------------------------------------
+  data required time                                                 4.58
+  data arrival time                                                 -4.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U2/gap_register_reg[3]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.66       0.66 r
+  U0/U25/Y (INVX16M)                                      0.26       0.91 f
+  U0/U12/Y (NAND2X4M)                                     0.31       1.22 r
+  U0/U31/Y (OR2X12M)                                      0.22       1.44 r
+  U0/U29/Y (NAND2X12M)                                    0.15       1.59 f
+  U0/o_data_state (write_fsm)                             0.00       1.59 f
+  U1/i_data_state (write_counters)                        0.00       1.59 f
+  U1/U49/Y (NAND3X2M)                                     0.31       1.90 r
+  U1/U7/Y (NOR2X4M)                                       0.19       2.08 f
+  U1/o_gap_done (write_counters)                          0.00       2.08 f
+  U2/i_gap_done (write_shift)                             0.00       2.08 f
+  U2/U3/Y (BUFX18M)                                       0.22       2.30 f
+  U2/U28/Y (NOR2X12M)                                     0.41       2.71 r
+  U2/U31/Y (NOR2BX2M)                                     0.98       3.69 r
+  U2/U4/Y (NOR2X8M)                                       0.25       3.93 f
+  U2/U10/Y (OAI2BB2X1M)                                   0.68       4.61 r
+  U2/gap_register_reg[3]/D (DFFQX2M)                      0.00       4.61 r
+  data arrival time                                                  4.61
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U2/gap_register_reg[3]/CK (DFFQX2M)                     0.00       4.80 r
+  library setup time                                     -0.17       4.63
+  data required time                                                 4.63
+  --------------------------------------------------------------------------
+  data required time                                                 4.63
+  data arrival time                                                 -4.61
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/counter_preamble_reg[2]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.49       0.49 f
+  U0/U25/Y (INVX16M)                                      0.32       0.82 r
+  U0/U12/Y (NAND2X4M)                                     0.28       1.09 f
+  U0/U31/Y (OR2X12M)                                      0.24       1.33 f
+  U0/U29/Y (NAND2X12M)                                    0.18       1.51 r
+  U0/o_data_state (write_fsm)                             0.00       1.51 r
+  U1/i_data_state (write_counters)                        0.00       1.51 r
+  U1/U129/Y (INVX2M)                                      0.29       1.80 f
+  U1/U4/Y (NAND2X4M)                                      0.26       2.06 r
+  U1/U43/Y (INVX10M)                                      0.16       2.22 f
+  U1/U29/Y (NOR2X4M)                                      0.36       2.58 r
+  U1/U84/Y (NOR2X12M)                                     0.10       2.68 f
+  U1/U27/Y (OAI32X4M)                                     0.52       3.21 r
+  U1/U41/Y (INVX8M)                                       0.24       3.45 f
+  U1/U124/Y (BUFX10M)                                     0.26       3.70 f
+  U1/U52/Y (OAI32X2M)                                     0.84       4.54 r
+  U1/counter_preamble_reg[2]/D (DFFRHQX4M)                0.00       4.54 r
+  data arrival time                                                  4.54
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/counter_preamble_reg[2]/CK (DFFRHQX4M)               0.00       4.80 r
+  library setup time                                     -0.24       4.56
+  data required time                                                 4.56
+  --------------------------------------------------------------------------
+  data required time                                                 4.56
+  data arrival time                                                 -4.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: U0/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/gap_value_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[2]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[2]/Q (DFFRHQX8M)                   0.49       0.49 f
+  U0/U18/Y (INVX6M)                                       0.45       0.94 r
+  U0/U48/Y (OR2X2M)                                       0.58       1.52 r
+  U0/U4/Y (OAI21X8M)                                      0.23       1.74 f
+  U0/U26/Y (BUFX32M)                                      0.27       2.01 f
+  U0/o_interamble_valid (write_fsm)                       0.00       2.01 f
+  U1/i_interamble_valid (write_counters)                  0.00       2.01 f
+  U1/U61/Y (INVXLM)                                       0.50       2.52 r
+  U1/U3/Y (BUFX5M)                                        0.63       3.15 r
+  U1/U54/Y (NAND2X4M)                                     0.48       3.63 f
+  U1/U197/Y (AO2B2XLM)                                    0.77       4.40 r
+  U1/gap_value_reg[0]/D (DFFRQX4M)                        0.00       4.40 r
+  data arrival time                                                  4.40
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/gap_value_reg[0]/CK (DFFRQX4M)                       0.00       4.80 r
+  library setup time                                     -0.38       4.42
+  data required time                                                 4.42
+  --------------------------------------------------------------------------
+  data required time                                                 4.42
+  data arrival time                                                 -4.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.02
+
+
+  Startpoint: U0/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/gap_value_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[2]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[2]/Q (DFFRHQX8M)                   0.49       0.49 f
+  U0/U18/Y (INVX6M)                                       0.45       0.94 r
+  U0/U48/Y (OR2X2M)                                       0.58       1.52 r
+  U0/U4/Y (OAI21X8M)                                      0.23       1.74 f
+  U0/U26/Y (BUFX32M)                                      0.27       2.01 f
+  U0/o_interamble_valid (write_fsm)                       0.00       2.01 f
+  U1/i_interamble_valid (write_counters)                  0.00       2.01 f
+  U1/U61/Y (INVXLM)                                       0.50       2.52 r
+  U1/U3/Y (BUFX5M)                                        0.63       3.15 r
+  U1/U54/Y (NAND2X4M)                                     0.48       3.63 f
+  U1/U164/Y (OAI2BB2X1M)                                  0.73       4.36 r
+  U1/gap_value_reg[1]/D (DFFRQX4M)                        0.00       4.36 r
+  data arrival time                                                  4.36
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/gap_value_reg[1]/CK (DFFRQX4M)                       0.00       4.80 r
+  library setup time                                     -0.41       4.39
+  data required time                                                 4.39
+  --------------------------------------------------------------------------
+  data required time                                                 4.39
+  data arrival time                                                 -4.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: U0/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/gap_value_reg[3]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[2]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[2]/Q (DFFRHQX8M)                   0.49       0.49 f
+  U0/U18/Y (INVX6M)                                       0.45       0.94 r
+  U0/U48/Y (OR2X2M)                                       0.58       1.52 r
+  U0/U4/Y (OAI21X8M)                                      0.23       1.74 f
+  U0/U26/Y (BUFX32M)                                      0.27       2.01 f
+  U0/o_interamble_valid (write_fsm)                       0.00       2.01 f
+  U1/i_interamble_valid (write_counters)                  0.00       2.01 f
+  U1/U61/Y (INVXLM)                                       0.50       2.52 r
+  U1/U3/Y (BUFX5M)                                        0.63       3.15 r
+  U1/U54/Y (NAND2X4M)                                     0.48       3.63 f
+  U1/U166/Y (OAI2BB2X1M)                                  0.73       4.36 r
+  U1/gap_value_reg[3]/D (DFFRQX2M)                        0.00       4.36 r
+  data arrival time                                                  4.36
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/gap_value_reg[3]/CK (DFFRQX2M)                       0.00       4.80 r
+  library setup time                                     -0.41       4.39
+  data required time                                                 4.39
+  --------------------------------------------------------------------------
+  data required time                                                 4.39
+  data arrival time                                                 -4.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: U0/current_state_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/gap_value_reg[2]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[2]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[2]/Q (DFFRHQX8M)                   0.49       0.49 f
+  U0/U18/Y (INVX6M)                                       0.45       0.94 r
+  U0/U48/Y (OR2X2M)                                       0.58       1.52 r
+  U0/U4/Y (OAI21X8M)                                      0.23       1.74 f
+  U0/U26/Y (BUFX32M)                                      0.27       2.01 f
+  U0/o_interamble_valid (write_fsm)                       0.00       2.01 f
+  U1/i_interamble_valid (write_counters)                  0.00       2.01 f
+  U1/U61/Y (INVXLM)                                       0.50       2.52 r
+  U1/U3/Y (BUFX5M)                                        0.63       3.15 r
+  U1/U54/Y (NAND2X4M)                                     0.48       3.63 f
+  U1/U165/Y (OAI2BB2X1M)                                  0.73       4.36 r
+  U1/gap_value_reg[2]/D (DFFRQX2M)                        0.00       4.36 r
+  data arrival time                                                  4.36
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/gap_value_reg[2]/CK (DFFRQX2M)                       0.00       4.80 r
+  library setup time                                     -0.41       4.39
+  data required time                                                 4.39
+  --------------------------------------------------------------------------
+  data required time                                                 4.39
+  data arrival time                                                 -4.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.03
+
+
+  Startpoint: U0/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/wr_en_low_flag_reg
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[0]/CK (DFFRHQX4M)                  0.00       0.00 r
+  U0/current_state_reg[0]/Q (DFFRHQX4M)                   0.59       0.59 f
+  U0/U19/Y (INVX14M)                                      0.39       0.98 r
+  U0/U40/Y (INVXLM)                                       0.41       1.39 f
+  U0/U15/Y (NAND2X2M)                                     0.36       1.75 r
+  U0/U14/Y (NAND2X2M)                                     0.28       2.04 f
+  U0/o_post (write_fsm)                                   0.00       2.04 f
+  U1/i_post (write_counters)                              0.00       2.04 f
+  U1/U138/Y (NOR2X3M)                                     0.87       2.91 r
+  U1/U83/Y (NOR3BX4M)                                     0.56       3.46 r
+  U1/U19/Y (BUFX5M)                                       0.34       3.80 r
+  U1/U173/Y (AO21XLM)                                     0.57       4.37 r
+  U1/wr_en_low_flag_reg/D (DFFRQX2M)                      0.00       4.37 r
+  data arrival time                                                  4.37
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/wr_en_low_flag_reg/CK (DFFRQX2M)                     0.00       4.80 r
+  library setup time                                     -0.39       4.41
+  data required time                                                 4.41
+  --------------------------------------------------------------------------
+  data required time                                                 4.41
+  data arrival time                                                 -4.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/counter_preamble_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.49       0.49 f
+  U0/U25/Y (INVX16M)                                      0.32       0.82 r
+  U0/U12/Y (NAND2X4M)                                     0.28       1.09 f
+  U0/U31/Y (OR2X12M)                                      0.24       1.33 f
+  U0/U29/Y (NAND2X12M)                                    0.18       1.51 r
+  U0/o_data_state (write_fsm)                             0.00       1.51 r
+  U1/i_data_state (write_counters)                        0.00       1.51 r
+  U1/U129/Y (INVX2M)                                      0.29       1.80 f
+  U1/U4/Y (NAND2X4M)                                      0.26       2.06 r
+  U1/U43/Y (INVX10M)                                      0.16       2.22 f
+  U1/U29/Y (NOR2X4M)                                      0.36       2.58 r
+  U1/U84/Y (NOR2X12M)                                     0.10       2.68 f
+  U1/U27/Y (OAI32X4M)                                     0.52       3.21 r
+  U1/U41/Y (INVX8M)                                       0.24       3.45 f
+  U1/U124/Y (BUFX10M)                                     0.26       3.70 f
+  U1/U107/Y (OR2X1M)                                      0.44       4.14 f
+  U1/U104/Y (CLKNAND2X2M)                                 0.29       4.42 r
+  U1/counter_preamble_reg[0]/D (DFFRQX4M)                 0.00       4.42 r
+  data arrival time                                                  4.42
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/counter_preamble_reg[0]/CK (DFFRQX4M)                0.00       4.80 r
+  library setup time                                     -0.33       4.47
+  data required time                                                 4.47
+  --------------------------------------------------------------------------
+  data required time                                                 4.47
+  data arrival time                                                 -4.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: U0/current_state_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/counter_write_data_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[0]/CK (DFFRHQX4M)                  0.00       0.00 r
+  U0/current_state_reg[0]/Q (DFFRHQX4M)                   0.59       0.59 f
+  U0/U19/Y (INVX14M)                                      0.39       0.98 r
+  U0/U40/Y (INVXLM)                                       0.41       1.39 f
+  U0/U15/Y (NAND2X2M)                                     0.36       1.75 r
+  U0/U14/Y (NAND2X2M)                                     0.28       2.04 f
+  U0/o_post (write_fsm)                                   0.00       2.04 f
+  U1/i_post (write_counters)                              0.00       2.04 f
+  U1/U138/Y (NOR2X3M)                                     0.87       2.91 r
+  U1/U83/Y (NOR3BX4M)                                     0.56       3.46 r
+  U1/U19/Y (BUFX5M)                                       0.34       3.80 r
+  U1/U66/Y (NOR2BX8M)                                     0.19       4.00 f
+  U1/U21/Y (NOR2X2M)                                      0.43       4.43 r
+  U1/counter_write_data_reg[0]/D (DFFRX2M)                0.00       4.43 r
+  data arrival time                                                  4.43
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/counter_write_data_reg[0]/CK (DFFRX2M)               0.00       4.80 r
+  library setup time                                     -0.31       4.49
+  data required time                                                 4.49
+  --------------------------------------------------------------------------
+  data required time                                                 4.49
+  data arrival time                                                 -4.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/counter_preamble_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.66       0.66 r
+  U0/U25/Y (INVX16M)                                      0.26       0.91 f
+  U0/U12/Y (NAND2X4M)                                     0.31       1.22 r
+  U0/U31/Y (OR2X12M)                                      0.22       1.44 r
+  U0/U29/Y (NAND2X12M)                                    0.15       1.59 f
+  U0/o_data_state (write_fsm)                             0.00       1.59 f
+  U1/i_data_state (write_counters)                        0.00       1.59 f
+  U1/U129/Y (INVX2M)                                      0.45       2.04 r
+  U1/U4/Y (NAND2X4M)                                      0.25       2.29 f
+  U1/U43/Y (INVX10M)                                      0.26       2.55 r
+  U1/U29/Y (NOR2X4M)                                      0.16       2.72 f
+  U1/U84/Y (NOR2X12M)                                     0.19       2.91 r
+  U1/U27/Y (OAI32X4M)                                     0.26       3.17 f
+  U1/U112/Y (AO21XLM)                                     0.66       3.84 f
+  U1/U38/Y (OAI2BB2X1M)                                   0.64       4.47 f
+  U1/counter_preamble_reg[1]/D (DFFRX2M)                  0.00       4.47 f
+  data arrival time                                                  4.47
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/counter_preamble_reg[1]/CK (DFFRX2M)                 0.00       4.80 r
+  library setup time                                     -0.24       4.56
+  data required time                                                 4.56
+  --------------------------------------------------------------------------
+  data required time                                                 4.56
+  data arrival time                                                 -4.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/o_preamble_valid_reg
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.66       0.66 r
+  U0/U25/Y (INVX16M)                                      0.26       0.91 f
+  U0/U12/Y (NAND2X4M)                                     0.31       1.22 r
+  U0/U31/Y (OR2X12M)                                      0.22       1.44 r
+  U0/U29/Y (NAND2X12M)                                    0.15       1.59 f
+  U0/o_data_state (write_fsm)                             0.00       1.59 f
+  U1/i_data_state (write_counters)                        0.00       1.59 f
+  U1/U129/Y (INVX2M)                                      0.45       2.04 r
+  U1/U4/Y (NAND2X4M)                                      0.25       2.29 f
+  U1/U43/Y (INVX10M)                                      0.26       2.55 r
+  U1/U67/Y (NOR2X1M)                                      0.28       2.83 f
+  U1/U20/Y (OR2X6M)                                       0.28       3.11 f
+  U1/U63/Y (OAI2BB1X2M)                                   0.46       3.57 f
+  U1/U62/Y (INVX2M)                                       0.35       3.92 r
+  U1/U37/Y (NAND3X2M)                                     0.34       4.25 f
+  U1/U36/Y (NAND2X2M)                                     0.31       4.57 r
+  U1/o_preamble_valid_reg/D (DFFQX2M)                     0.00       4.57 r
+  data arrival time                                                  4.57
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/o_preamble_valid_reg/CK (DFFQX2M)                    0.00       4.80 r
+  library setup time                                     -0.14       4.66
+  data required time                                                 4.66
+  --------------------------------------------------------------------------
+  data required time                                                 4.66
+  data arrival time                                                 -4.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U2/gap_register_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.66       0.66 r
+  U0/U25/Y (INVX16M)                                      0.26       0.91 f
+  U0/U12/Y (NAND2X4M)                                     0.31       1.22 r
+  U0/U31/Y (OR2X12M)                                      0.22       1.44 r
+  U0/U29/Y (NAND2X12M)                                    0.15       1.59 f
+  U0/o_data_state (write_fsm)                             0.00       1.59 f
+  U1/i_data_state (write_counters)                        0.00       1.59 f
+  U1/U49/Y (NAND3X2M)                                     0.31       1.90 r
+  U1/U7/Y (NOR2X4M)                                       0.19       2.08 f
+  U1/o_gap_done (write_counters)                          0.00       2.08 f
+  U2/i_gap_done (write_shift)                             0.00       2.08 f
+  U2/U3/Y (BUFX18M)                                       0.22       2.30 f
+  U2/U28/Y (NOR2X12M)                                     0.41       2.71 r
+  U2/U37/Y (OA21X8M)                                      0.30       3.01 r
+  U2/U25/Y (CLKINVX40M)                                   0.20       3.22 f
+  U2/U8/Y (NOR2X2M)                                       0.81       4.03 r
+  U2/U19/Y (OAI2B2X2M)                                    0.41       4.44 f
+  U2/gap_register_reg[0]/D (DFFQX2M)                      0.00       4.44 f
+  data arrival time                                                  4.44
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U2/gap_register_reg[0]/CK (DFFQX2M)                     0.00       4.80 r
+  library setup time                                     -0.25       4.55
+  data required time                                                 4.55
+  --------------------------------------------------------------------------
+  data required time                                                 4.55
+  data arrival time                                                 -4.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U2/gap_register_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.66       0.66 r
+  U0/U25/Y (INVX16M)                                      0.26       0.91 f
+  U0/U12/Y (NAND2X4M)                                     0.31       1.22 r
+  U0/U31/Y (OR2X12M)                                      0.22       1.44 r
+  U0/U29/Y (NAND2X12M)                                    0.15       1.59 f
+  U0/o_data_state (write_fsm)                             0.00       1.59 f
+  U1/i_data_state (write_counters)                        0.00       1.59 f
+  U1/U49/Y (NAND3X2M)                                     0.31       1.90 r
+  U1/U7/Y (NOR2X4M)                                       0.19       2.08 f
+  U1/o_gap_done (write_counters)                          0.00       2.08 f
+  U2/i_gap_done (write_shift)                             0.00       2.08 f
+  U2/U3/Y (BUFX18M)                                       0.22       2.30 f
+  U2/U28/Y (NOR2X12M)                                     0.41       2.71 r
+  U2/U37/Y (OA21X8M)                                      0.30       3.01 r
+  U2/U25/Y (CLKINVX40M)                                   0.20       3.22 f
+  U2/U8/Y (NOR2X2M)                                       0.81       4.03 r
+  U2/U20/Y (OAI22X2M)                                     0.41       4.43 f
+  U2/gap_register_reg[1]/D (DFFQX4M)                      0.00       4.43 f
+  data arrival time                                                  4.43
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U2/gap_register_reg[1]/CK (DFFQX4M)                     0.00       4.80 r
+  library setup time                                     -0.25       4.55
+  data required time                                                 4.55
+  --------------------------------------------------------------------------
+  data required time                                                 4.55
+  data arrival time                                                 -4.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U2/gap_register_reg[2]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.66       0.66 r
+  U0/U25/Y (INVX16M)                                      0.26       0.91 f
+  U0/U12/Y (NAND2X4M)                                     0.31       1.22 r
+  U0/U31/Y (OR2X12M)                                      0.22       1.44 r
+  U0/U29/Y (NAND2X12M)                                    0.15       1.59 f
+  U0/o_data_state (write_fsm)                             0.00       1.59 f
+  U1/i_data_state (write_counters)                        0.00       1.59 f
+  U1/U49/Y (NAND3X2M)                                     0.31       1.90 r
+  U1/U7/Y (NOR2X4M)                                       0.19       2.08 f
+  U1/o_gap_done (write_counters)                          0.00       2.08 f
+  U2/i_gap_done (write_shift)                             0.00       2.08 f
+  U2/U3/Y (BUFX18M)                                       0.22       2.30 f
+  U2/U28/Y (NOR2X12M)                                     0.41       2.71 r
+  U2/U18/Y (AND2X2M)                                      0.53       3.24 r
+  U2/U27/Y (INVX2M)                                       0.26       3.50 f
+  U2/U5/Y (AND2X6M)                                       0.28       3.78 f
+  U2/U9/Y (OAI2BB2X1M)                                    0.64       4.42 r
+  U2/gap_register_reg[2]/RN (DFFTRX4M)                    0.00       4.42 r
+  data arrival time                                                  4.42
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U2/gap_register_reg[2]/CK (DFFTRX4M)                    0.00       4.80 r
+  library setup time                                     -0.26       4.54
+  data required time                                                 4.54
+  --------------------------------------------------------------------------
+  data required time                                                 4.54
+  data arrival time                                                 -4.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+  Startpoint: U0/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clk)
+  Endpoint: U1/counter_preamble_reg[3]
+            (rising edge-triggered flip-flop clocked by i_clk)
+  Path Group: i_clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  write_manager      tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clk (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U0/current_state_reg[1]/CK (DFFRHQX8M)                  0.00       0.00 r
+  U0/current_state_reg[1]/Q (DFFRHQX8M)                   0.49       0.49 f
+  U0/U25/Y (INVX16M)                                      0.32       0.82 r
+  U0/U12/Y (NAND2X4M)                                     0.28       1.09 f
+  U0/U31/Y (OR2X12M)                                      0.24       1.33 f
+  U0/U29/Y (NAND2X12M)                                    0.18       1.51 r
+  U0/o_data_state (write_fsm)                             0.00       1.51 r
+  U1/i_data_state (write_counters)                        0.00       1.51 r
+  U1/U129/Y (INVX2M)                                      0.29       1.80 f
+  U1/U4/Y (NAND2X4M)                                      0.26       2.06 r
+  U1/U43/Y (INVX10M)                                      0.16       2.22 f
+  U1/U29/Y (NOR2X4M)                                      0.36       2.58 r
+  U1/U84/Y (NOR2X12M)                                     0.10       2.68 f
+  U1/U27/Y (OAI32X4M)                                     0.52       3.21 r
+  U1/U41/Y (INVX8M)                                       0.24       3.45 f
+  U1/U124/Y (BUFX10M)                                     0.26       3.70 f
+  U1/U97/Y (OR2X1M)                                       0.42       4.12 f
+  U1/U39/Y (NAND2X2M)                                     0.30       4.42 r
+  U1/counter_preamble_reg[3]/D (DFFRX4M)                  0.00       4.42 r
+  data arrival time                                                  4.42
+
+  clock i_clk (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  clock uncertainty                                      -0.20       4.80
+  U1/counter_preamble_reg[3]/CK (DFFRX4M)                 0.00       4.80 r
+  library setup time                                     -0.27       4.53
+  data required time                                                 4.53
+  --------------------------------------------------------------------------
+  data required time                                                 4.53
+  data arrival time                                                 -4.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.11
+
+
+1
