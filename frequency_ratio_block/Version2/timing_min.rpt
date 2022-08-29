@@ -1,0 +1,720 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 20
+Design : FREQUENCY_RATIO
+Version: K-2015.06
+Date   : Wed Apr 20 23:24:53 2022
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c   Library: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: dfi_address_reg[13]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_address_reg[13]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_address_reg[13]/CK (DFFRHQX4M)       0.00       0.00 r
+  dfi_address_reg[13]/Q (DFFRHQX4M)        0.36       0.36 f
+  U228/Y (AO22X4M)                         0.25       0.61 f
+  U312/Y (NAND2BX8M)                       0.17       0.79 f
+  dfi_address_reg[13]/D (DFFRHQX4M)        0.00       0.79 f
+  data arrival time                                   0.79
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_address_reg[13]/CK (DFFRHQX4M)       0.00       0.10 r
+  library hold time                       -0.07       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.79
+  -----------------------------------------------------------
+  slack (MET)                                         0.76
+
+
+  Startpoint: dfi_wrdata_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_wrdata_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_wrdata_reg[0]/CK (DFFRHQX4M)         0.00       0.00 r
+  dfi_wrdata_reg[0]/Q (DFFRHQX4M)          0.37       0.37 f
+  U195/Y (AO22X8M)                         0.22       0.59 f
+  U106/Y (OR2X6M)                          0.21       0.80 f
+  dfi_wrdata_reg[0]/D (DFFRHQX4M)          0.00       0.80 f
+  data arrival time                                   0.80
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_wrdata_reg[0]/CK (DFFRHQX4M)         0.00       0.10 r
+  library hold time                       -0.07       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.80
+  -----------------------------------------------------------
+  slack (MET)                                         0.77
+
+
+  Startpoint: dfi_cs_n_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_cs_n_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_cs_n_reg[0]/CK (DFFRHQX4M)           0.00       0.00 r
+  dfi_cs_n_reg[0]/Q (DFFRHQX4M)            0.36       0.36 f
+  U282/Y (AO22X4M)                         0.25       0.62 f
+  U120/Y (OR2X6M)                          0.22       0.83 f
+  dfi_cs_n_reg[0]/D (DFFRHQX4M)            0.00       0.83 f
+  data arrival time                                   0.83
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_cs_n_reg[0]/CK (DFFRHQX4M)           0.00       0.10 r
+  library hold time                       -0.07       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.83
+  -----------------------------------------------------------
+  slack (MET)                                         0.81
+
+
+  Startpoint: dfi_cs_n_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_cs_n_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_cs_n_reg[1]/CK (DFFRHQX4M)           0.00       0.00 r
+  dfi_cs_n_reg[1]/Q (DFFRHQX4M)            0.36       0.36 f
+  U227/Y (AO22X4M)                         0.25       0.62 f
+  U116/Y (OR2X6M)                          0.22       0.83 f
+  dfi_cs_n_reg[1]/D (DFFRHQX4M)            0.00       0.83 f
+  data arrival time                                   0.83
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_cs_n_reg[1]/CK (DFFRHQX4M)           0.00       0.10 r
+  library hold time                       -0.07       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.83
+  -----------------------------------------------------------
+  slack (MET)                                         0.81
+
+
+  Startpoint: dfi_address_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_address_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_address_reg[0]/CK (DFFRHQX2M)        0.00       0.00 r
+  dfi_address_reg[0]/Q (DFFRHQX2M)         0.43       0.43 f
+  U194/Y (AO22X8M)                         0.26       0.69 f
+  U207/Y (NAND2BX12M)                      0.15       0.85 f
+  dfi_address_reg[0]/D (DFFRHQX2M)         0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_address_reg[0]/CK (DFFRHQX2M)        0.00       0.10 r
+  library hold time                       -0.11      -0.01
+  data required time                                 -0.01
+  -----------------------------------------------------------
+  data required time                                 -0.01
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (MET)                                         0.86
+
+
+  Startpoint: dfi_wrdata_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_wrdata_reg[2]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_wrdata_reg[2]/CK (DFFRHQX4M)         0.00       0.00 r
+  dfi_wrdata_reg[2]/Q (DFFRHQX4M)          0.36       0.36 f
+  U204/Y (AO22X2M)                         0.33       0.70 f
+  U142/Y (OR2X6M)                          0.23       0.93 f
+  dfi_wrdata_reg[2]/D (DFFRHQX4M)          0.00       0.93 f
+  data arrival time                                   0.93
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_wrdata_reg[2]/CK (DFFRHQX4M)         0.00       0.10 r
+  library hold time                       -0.07       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.93
+  -----------------------------------------------------------
+  slack (MET)                                         0.90
+
+
+  Startpoint: dfi_wrdata_reg[6]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_wrdata_reg[6]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_wrdata_reg[6]/CK (DFFRHQX4M)         0.00       0.00 r
+  dfi_wrdata_reg[6]/Q (DFFRHQX4M)          0.36       0.36 f
+  U203/Y (AO22X2M)                         0.33       0.70 f
+  U141/Y (OR2X6M)                          0.23       0.93 f
+  dfi_wrdata_reg[6]/D (DFFRHQX4M)          0.00       0.93 f
+  data arrival time                                   0.93
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_wrdata_reg[6]/CK (DFFRHQX4M)         0.00       0.10 r
+  library hold time                       -0.07       0.03
+  data required time                                  0.03
+  -----------------------------------------------------------
+  data required time                                  0.03
+  data arrival time                                  -0.93
+  -----------------------------------------------------------
+  slack (MET)                                         0.90
+
+
+  Startpoint: phase_select_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: phase_select_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  phase_select_reg[1]/CK (DFFRHQX8M)       0.00       0.00 r
+  phase_select_reg[1]/Q (DFFRHQX8M)        0.36       0.36 f
+  U174/Y (INVX20M)                         0.12       0.49 r
+  U286/Y (CLKINVX40M)                      0.10       0.59 f
+  U269/Y (CLKINVX40M)                      0.09       0.68 r
+  U283/Y (INVX24M)                         0.07       0.75 f
+  U172/Y (AO22X2M)                         0.29       1.03 f
+  phase_select_reg[1]/D (DFFRHQX8M)        0.00       1.03 f
+  data arrival time                                   1.03
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  phase_select_reg[1]/CK (DFFRHQX8M)       0.00       0.10 r
+  library hold time                       -0.09       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -1.03
+  -----------------------------------------------------------
+  slack (MET)                                         1.02
+
+
+  Startpoint: dfi_wrdata_mask_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_wrdata_mask_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock i_clock (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dfi_wrdata_mask_reg[0]/CK (DFFRHQX4M)                   0.00       0.00 r
+  dfi_wrdata_mask_reg[0]/Q (DFFRHQX4M)                    0.36       0.36 f
+  U288/Y (AND2X2M)                                        0.30       0.66 f
+  U210/Y (OR2X12M)                                        0.21       0.86 f
+  U128/Y (OR2X8M)                                         0.20       1.06 f
+  dfi_wrdata_mask_reg[0]/D (DFFRHQX4M)                    0.00       1.06 f
+  data arrival time                                                  1.06
+
+  clock i_clock (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  dfi_wrdata_mask_reg[0]/CK (DFFRHQX4M)                   0.00       0.10 r
+  library hold time                                      -0.07       0.03
+  data required time                                                 0.03
+  --------------------------------------------------------------------------
+  data required time                                                 0.03
+  data arrival time                                                 -1.06
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.04
+
+
+  Startpoint: dfi_address_reg[2]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_address_reg[2]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_address_reg[2]/CK (DFFRHQX1M)        0.00       0.00 r
+  dfi_address_reg[2]/Q (DFFRHQX1M)         0.61       0.61 f
+  U308/Y (AO22X8M)                         0.32       0.93 f
+  U252/Y (NAND2BX12M)                      0.16       1.08 f
+  dfi_address_reg[2]/D (DFFRHQX1M)         0.00       1.08 f
+  data arrival time                                   1.08
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_address_reg[2]/CK (DFFRHQX1M)        0.00       0.10 r
+  library hold time                       -0.05       0.05
+  data required time                                  0.05
+  -----------------------------------------------------------
+  data required time                                  0.05
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.04
+
+
+  Startpoint: dfi_wrdata_en_reg
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_wrdata_en_reg
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_wrdata_en_reg/CK (DFFRHQX1M)         0.00       0.00 r
+  dfi_wrdata_en_reg/Q (DFFRHQX1M)          0.61       0.61 f
+  U188/Y (AO22X8M)                         0.32       0.93 f
+  U251/Y (NAND2BX12M)                      0.16       1.08 f
+  dfi_wrdata_en_reg/D (DFFRHQX1M)          0.00       1.08 f
+  data arrival time                                   1.08
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_wrdata_en_reg/CK (DFFRHQX1M)         0.00       0.10 r
+  library hold time                       -0.05       0.05
+  data required time                                  0.05
+  -----------------------------------------------------------
+  data required time                                  0.05
+  data arrival time                                  -1.08
+  -----------------------------------------------------------
+  slack (MET)                                         1.04
+
+
+  Startpoint: dfi_wrdata_reg[3]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_wrdata_reg[3]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_wrdata_reg[3]/CK (DFFRHQX1M)         0.00       0.00 r
+  dfi_wrdata_reg[3]/Q (DFFRHQX1M)          0.61       0.61 f
+  U192/Y (AO22X8M)                         0.32       0.92 f
+  U311/Y (NAND2BX8M)                       0.16       1.09 f
+  dfi_wrdata_reg[3]/D (DFFRHQX1M)          0.00       1.09 f
+  data arrival time                                   1.09
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_wrdata_reg[3]/CK (DFFRHQX1M)         0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -1.09
+  -----------------------------------------------------------
+  slack (MET)                                         1.05
+
+
+  Startpoint: dfi_address_reg[7]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_address_reg[7]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_address_reg[7]/CK (DFFRHQX1M)        0.00       0.00 r
+  dfi_address_reg[7]/Q (DFFRHQX1M)         0.61       0.61 f
+  U281/Y (AO22X8M)                         0.32       0.92 f
+  U183/Y (NAND2BX8M)                       0.16       1.09 f
+  dfi_address_reg[7]/D (DFFRHQX1M)         0.00       1.09 f
+  data arrival time                                   1.09
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_address_reg[7]/CK (DFFRHQX1M)        0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -1.09
+  -----------------------------------------------------------
+  slack (MET)                                         1.05
+
+
+  Startpoint: dfi_wrdata_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_wrdata_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_wrdata_reg[1]/CK (DFFRHQX1M)         0.00       0.00 r
+  dfi_wrdata_reg[1]/Q (DFFRHQX1M)          0.61       0.61 f
+  U193/Y (AO22X8M)                         0.32       0.92 f
+  U103/Y (NAND2BX8M)                       0.16       1.09 f
+  dfi_wrdata_reg[1]/D (DFFRHQX1M)          0.00       1.09 f
+  data arrival time                                   1.09
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_wrdata_reg[1]/CK (DFFRHQX1M)         0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -1.09
+  -----------------------------------------------------------
+  slack (MET)                                         1.05
+
+
+  Startpoint: dfi_reset_n_reg[1]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_reset_n_reg[1]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_reset_n_reg[1]/CK (DFFRHQX1M)        0.00       0.00 r
+  dfi_reset_n_reg[1]/Q (DFFRHQX1M)         0.59       0.59 f
+  U267/Y (AO22X4M)                         0.35       0.94 f
+  U266/Y (NAND2BX12M)                      0.17       1.11 f
+  dfi_reset_n_reg[1]/D (DFFRHQX1M)         0.00       1.11 f
+  data arrival time                                   1.11
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_reset_n_reg[1]/CK (DFFRHQX1M)        0.00       0.10 r
+  library hold time                       -0.05       0.05
+  data required time                                  0.05
+  -----------------------------------------------------------
+  data required time                                  0.05
+  data arrival time                                  -1.11
+  -----------------------------------------------------------
+  slack (MET)                                         1.06
+
+
+  Startpoint: dfi_address_reg[5]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_address_reg[5]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_address_reg[5]/CK (DFFRHQX1M)        0.00       0.00 r
+  dfi_address_reg[5]/Q (DFFRHQX1M)         0.59       0.59 f
+  U138/Y (AO22X4M)                         0.34       0.94 f
+  U263/Y (NAND2BX8M)                       0.17       1.11 f
+  dfi_address_reg[5]/D (DFFRHQX1M)         0.00       1.11 f
+  data arrival time                                   1.11
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_address_reg[5]/CK (DFFRHQX1M)        0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -1.11
+  -----------------------------------------------------------
+  slack (MET)                                         1.07
+
+
+  Startpoint: dfi_address_reg[4]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_address_reg[4]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_address_reg[4]/CK (DFFRHQX1M)        0.00       0.00 r
+  dfi_address_reg[4]/Q (DFFRHQX1M)         0.59       0.59 f
+  U225/Y (AO22X4M)                         0.34       0.94 f
+  U184/Y (NAND2BX8M)                       0.17       1.11 f
+  dfi_address_reg[4]/D (DFFRHQX1M)         0.00       1.11 f
+  data arrival time                                   1.11
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_address_reg[4]/CK (DFFRHQX1M)        0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -1.11
+  -----------------------------------------------------------
+  slack (MET)                                         1.07
+
+
+  Startpoint: dfi_address_reg[9]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_address_reg[9]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_address_reg[9]/CK (DFFRHQX1M)        0.00       0.00 r
+  dfi_address_reg[9]/Q (DFFRHQX1M)         0.59       0.59 f
+  U114/Y (AO22X4M)                         0.34       0.94 f
+  U209/Y (NAND2BX8M)                       0.17       1.11 f
+  dfi_address_reg[9]/D (DFFRHQX1M)         0.00       1.11 f
+  data arrival time                                   1.11
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_address_reg[9]/CK (DFFRHQX1M)        0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -1.11
+  -----------------------------------------------------------
+  slack (MET)                                         1.07
+
+
+  Startpoint: dfi_reset_n_reg[0]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_reset_n_reg[0]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_reset_n_reg[0]/CK (DFFRQX2M)         0.00       0.00 r
+  dfi_reset_n_reg[0]/Q (DFFRQX2M)          0.67       0.67 f
+  U309/Y (AO22X8M)                         0.26       0.93 f
+  U310/Y (OR2X8M)                          0.22       1.15 f
+  dfi_reset_n_reg[0]/D (DFFRQX2M)          0.00       1.15 f
+  data arrival time                                   1.15
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_reset_n_reg[0]/CK (DFFRQX2M)         0.00       0.10 r
+  library hold time                       -0.02       0.08
+  data required time                                  0.08
+  -----------------------------------------------------------
+  data required time                                  0.08
+  data arrival time                                  -1.15
+  -----------------------------------------------------------
+  slack (MET)                                         1.08
+
+
+  Startpoint: dfi_wrdata_reg[5]
+              (rising edge-triggered flip-flop clocked by i_clock)
+  Endpoint: dfi_wrdata_reg[5]
+            (rising edge-triggered flip-flop clocked by i_clock)
+  Path Group: i_clock
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FREQUENCY_RATIO    tsmc13_wl30           scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  dfi_wrdata_reg[5]/CK (DFFRHQX1M)         0.00       0.00 r
+  dfi_wrdata_reg[5]/Q (DFFRHQX1M)          0.59       0.59 f
+  U215/Y (AO22X4M)                         0.37       0.96 f
+  U214/Y (INVX12M)                         0.10       1.06 r
+  U258/Y (NAND2X8M)                        0.08       1.14 f
+  dfi_wrdata_reg[5]/D (DFFRHQX1M)          0.00       1.14 f
+  data arrival time                                   1.14
+
+  clock i_clock (rise edge)                0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  clock uncertainty                        0.10       0.10
+  dfi_wrdata_reg[5]/CK (DFFRHQX1M)         0.00       0.10 r
+  library hold time                       -0.06       0.04
+  data required time                                  0.04
+  -----------------------------------------------------------
+  data required time                                  0.04
+  data arrival time                                  -1.14
+  -----------------------------------------------------------
+  slack (MET)                                         1.10
+
+
+1
