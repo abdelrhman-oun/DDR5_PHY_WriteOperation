@@ -1,0 +1,267 @@
+**************************************************
+Report         : passing_points
+
+Reference      : r:/WORK/COMMAND_ADDRESS
+Implementation : i:/WORK/COMMAND_ADDRESS
+Version        : L-2016.03-SP1
+Date           : Tue Apr 12 21:21:37 2022
+**************************************************
+
+77 Passing compare points:
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[10]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[10]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[11]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[11]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[12]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[12]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[13]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[13]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[2]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[2]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[3]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[3]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[4]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[4]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[5]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[5]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[6]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[6]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[7]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[7]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[8]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[8]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CA_reg[9]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CA_reg[9]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/CS_n_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/CS_n_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/DRAM_CRC_en_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/DRAM_CRC_en_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/DRAM_CRC_en_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/DRAM_CRC_en_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/burst_length_new_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/burst_length_new_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/burst_length_new_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/burst_length_new_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/burst_length_sel_reg_reg
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/burst_length_sel_reg_reg
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/current_state_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/current_state_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/current_state_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/current_state_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/default_sel_reg
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/default_sel_reg
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/mode_register_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/mode_register_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/mode_register_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/mode_register_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/mode_register_reg[2]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/mode_register_reg[2]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/mode_register_reg[3]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/mode_register_reg[3]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/mode_register_reg[4]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/mode_register_reg[4]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/mode_register_reg[5]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/mode_register_reg[5]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/mode_register_reg[6]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/mode_register_reg[6]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/mode_register_reg[7]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/mode_register_reg[7]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/operation_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/operation_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/operation_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/operation_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/operation_reg[2]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/operation_reg[2]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/operation_reg[3]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/operation_reg[3]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/operation_reg[4]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/operation_reg[4]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/operation_reg[7]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/operation_reg[7]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/post_cycle_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/post_cycle_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/post_cycle_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/post_cycle_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/pre_cycle_reg[0]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/pre_cycle_reg[0]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/pre_cycle_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/pre_cycle_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/pre_pattern_reg[1]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/pre_pattern_reg[1]
+
+  Ref  DFF        r:/WORK/COMMAND_ADDRESS/pre_pattern_reg[3]
+  Impl DFF        i:/WORK/COMMAND_ADDRESS/pre_pattern_reg[3]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[0]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[0]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[10]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[10]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[11]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[11]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[12]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[12]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[13]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[13]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[1]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[1]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[2]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[2]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[3]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[3]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[4]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[4]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[5]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[5]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[6]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[6]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[7]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[7]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[8]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[8]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CA[9]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CA[9]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/CS_n[0]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/CS_n[0]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/DRAM_CRC_en[0]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/DRAM_CRC_en[0]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/DRAM_CRC_en[1]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/DRAM_CRC_en[1]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/burst_length[0]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/burst_length[0]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/burst_length[1]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/burst_length[1]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/post_cycle[0]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/post_cycle[0]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/post_cycle[1]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/post_cycle[1]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/post_pattern[0]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/post_pattern[0]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/post_pattern[1]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/post_pattern[1]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/post_pattern[2]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/post_pattern[2]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_cycle[0]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_cycle[0]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_cycle[1]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_cycle[1]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_pattern[0]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_pattern[0]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_pattern[1]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_pattern[1]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_pattern[2]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_pattern[2]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_pattern[3]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_pattern[3]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_pattern[4]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_pattern[4]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_pattern[5]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_pattern[5]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_pattern[6]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_pattern[6]
+
+  Ref  Port       r:/WORK/COMMAND_ADDRESS/pre_pattern[7]
+  Impl Port       i:/WORK/COMMAND_ADDRESS/pre_pattern[7]
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1
