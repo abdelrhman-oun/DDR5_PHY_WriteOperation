@@ -1,0 +1,6 @@
+command address design based on FSM
+
+ description: COMMAND ADDRESS block is used to forward the command from
+              the PHY interface to the DRAM interface and extract some
+              info from mode register write (MRW) command like pre-amble,
+              post-amble and CRC enable.
