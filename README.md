@@ -1,8 +1,16 @@
 # Design of the Digital Data-Path of DDR5 PHY 
 
+**Motivation**
+
+      over the last five decades, there was a continuous evolution in DRAM technology, always targeting lower cost per bit, higher device capacity, higher bandwidth, and lower power consumption. The most recent DRAM standard released by JEDEC in mid-2020 is DDR5. It exhibits several new features, for example two channels on a single DIMM and data rates up to 6400 MT/s. As a result, DDR5 greatly enlarges the DRAM device options, while the selection of a suitable device heavily depends on the application.
+      Interfacing applications to the DDR memories is a challenge due to the several complexities associated with dealing with such high transfer rates at the physical level. DDR Physical Layer (DDR PHY) refers to the circuit responsible for such interface between the memory and the system using the memory. With every new generation, DDR memories support higher transfer rates. And with DDR5 the design challenge of the DDR PHYs is pushed even further.
+      In this thesis a design of the digital data-path within the DDR5 PHY is proposed. The design is based on the DFI 5.0 Specification standard and JEDEC standard JESD79-5A. 
+
+
 **Description:** This project aims at designing DDR5 PHY layer supporting write operation, CRC operation and all commands related to it. After understanding the standards governing the DDR PHY Operations (DFI, JEDEC DDR), we designed the PHY and implemented it using System Verilog (SV), we used Design Compiler (DC) to synthesis the block and Formality to make a verification of RTL vs. netlist. Finally we gone through the FPGA flow till downloading the bit file on the kit.
 
 **Supervisor:** Dr. Hesham Omran
+**Sponsor:** Si-Vision
 
 ## PHY functionality
    The main function of the PHY is passing the commands and data from MC to the DRAM and passing the data from DRAM to MC. Another function of the PHY is generating CRC code and appending it to the data, in addition to generating DQS, pre-amble, inter-amble and post-amble, it also handles the different phases of the inputs in case of frequency ratio.
@@ -45,7 +53,9 @@ Write Manager is responsible for transmitting the data from the frequency ratio 
 This block is consist of three different blocks, Write FSM, Write shift and Write counters.
 ![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/7a5d9ead0e9410db34cd1439c3533a9bdb900695/Documentation/pics/wm.jpg)
 
-
+#### Write FSM Block
+The write_FSM block is consist of 7 states as following.
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/d4b23967a21809fafa782b60774dbe8b5f9916a0/Documentation/pics/fsm.jpg)
 
 
 
