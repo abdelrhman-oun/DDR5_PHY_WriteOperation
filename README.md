@@ -13,7 +13,7 @@ Signal mapping as shown
   3.	Dfi_wrdata -> DQ. 
   4.	Dfi_wrdata_mask -> DM. 
   5.	Dfi_reset_n -> RESET_n. 
-![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/463e9fb9899962223ebc4ef19872e5007efd7de5/Documentation/pics/PHY.jpg | width=250)
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/463e9fb9899962223ebc4ef19872e5007efd7de5/Documentation/pics/PHY.jpg)
 
 ## PHY architecture
 The proposed design of the PHY consists of 5 main blocks
