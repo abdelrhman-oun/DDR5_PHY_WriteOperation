@@ -33,5 +33,21 @@ This section describes the implementation of each of the main 4 blocks.
 Frequency Ratio Block will be used to convert the signals from the Memory controller interface to the PHY interface according to the dfi_freq_ratio signal.
 ![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/afdf16c12f79a5e9ba234fbcccdd98ad97188e61/Documentation/pics/freq.jpg)
 
+##### Command Address block
+Command Address Block will receive the dfi_address and dfi_cs from the Frequency ratio Block then sends the dfi_address on the CA bus and the dfi_cs on CS signal.
+- In case of the command is Mode Register Write Command, this block will extract the burst length, preamble, postamble and DRAM_CRC_en information from the MRW command.
+- In case of the command is Write command the block will determine if the burst length will be the default or the alternative burst (saved value on mode register).
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/7a5d9ead0e9410db34cd1439c3533a9bdb900695/Documentation/pics/CA.jpg)
+
+##### Write Manager block
+Write Manager is responsible for transmitting the data from the frequency ratio block to the DQ bus, it is also responsible for transmitting the CRC code with the data transmitted, It should check the burst length value and according to this value it should send the data to the CRC Block.
+
+This block is consist of three different blocks, Write FSM, Write shift and Write counters.
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/7a5d9ead0e9410db34cd1439c3533a9bdb900695/Documentation/pics/wm.jpg)
+
+
+
+
+
 
 
