@@ -15,4 +15,23 @@ Signal mapping as shown
   5.	Dfi_reset_n -> RESET_n. 
 ![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/463e9fb9899962223ebc4ef19872e5007efd7de5/Documentation/pics/PHY.jpg)
 
+## PHY architecture
+The proposed design of the PHY consists of 5 main blocks
+- FREQUENCY RATIO
+- COMMAND ADDRESS
+- WRITE DATA
+- CRC
+- REGISTER FILE
+
+**the PHY block architecture.**
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/afdf16c12f79a5e9ba234fbcccdd98ad97188e61/Documentation/pics/architecture.jpg)
+
+## PHY blocks implementation
+This section describes the implementation of each of the main 4 blocks.
+
+##### Frequency ratio block
+Frequency Ratio Block will be used to convert the signals from the Memory controller interface to the PHY interface according to the dfi_freq_ratio signal.
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/afdf16c12f79a5e9ba234fbcccdd98ad97188e61/Documentation/pics/freq.jpg)
+
+
 
