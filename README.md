@@ -5,7 +5,7 @@
 **Supervisor:** Dr. Hesham Omran
 
 ## PHY functionality
-    The main function of the PHY is passing the commands and data from MC to the DRAM and passing the data from DRAM to MC. Another function of the PHY is generating CRC code and appending it to the data, in addition to generating DQS, pre-amble, inter-amble and post-amble, it also handles the different phases of the inputs in case of frequency ratio.
+   The main function of the PHY is passing the commands and data from MC to the DRAM and passing the data from DRAM to MC. Another function of the PHY is generating CRC code and appending it to the data, in addition to generating DQS, pre-amble, inter-amble and post-amble, it also handles the different phases of the inputs in case of frequency ratio.
 
 Signal mapping as shown
   1.	Dfi_address -> CA [13:0]. 
@@ -13,4 +13,6 @@ Signal mapping as shown
   3.	Dfi_wrdata -> DQ. 
   4.	Dfi_wrdata_mask -> DM. 
   5.	Dfi_reset_n -> RESET_n. 
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/463e9fb9899962223ebc4ef19872e5007efd7de5/Documentation/pics/PHY.jpg)
+
 
