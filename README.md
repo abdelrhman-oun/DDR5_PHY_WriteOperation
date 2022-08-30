@@ -9,8 +9,9 @@
 
 **Description:** This project aims at designing DDR5 PHY layer supporting write operation, CRC operation and all commands related to it. After understanding the standards governing the DDR PHY Operations (DFI, JEDEC DDR), we designed the PHY and implemented it using System Verilog (SV), we used Design Compiler (DC) to synthesis the block and Formality to make a verification of RTL vs. netlist. Finally we gone through the FPGA flow till downloading the bit file on the kit.
 
-**Supervisor:** Dr. Hesham Omran.
-**Sponsor:** Si-Vision.
+**Supervisor:** Dr. Hesham Omran
+
+**Sponsor:** Si-Vision
 
 ## PHY functionality
    The main function of the PHY is passing the commands and data from MC to the DRAM and passing the data from DRAM to MC. Another function of the PHY is generating CRC code and appending it to the data, in addition to generating DQS, pre-amble, inter-amble and post-amble, it also handles the different phases of the inputs in case of frequency ratio.
