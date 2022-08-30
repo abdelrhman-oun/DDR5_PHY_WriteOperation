@@ -57,7 +57,18 @@ This block is consist of three different blocks, Write FSM, Write shift and Writ
 The write_FSM block is consist of 7 states as following.
 ![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/d4b23967a21809fafa782b60774dbe8b5f9916a0/Documentation/pics/fsm.jpg)
 
+### CRC block
+This block responsible for generating CRC bits to protect the required data, the CRC polynomial used by DDR5 is the ATM-8 HEC **X^8+X^2+X^1+1**.
+This block is duplicated according to the DRAM size:
+- X4 device, one CRC block will be used.
+- X8 device, two CRC blocks will be used.
+- X16 device, four CRC blocks will be used.
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/04e4d02d1ef356d25c06e3acbb897349680abc11/Documentation/pics/crc.png)
 
+## Integration
+After integrating all blocks with each other to perform the required functionality of the PHY block the schematic view of the PHY was as following.
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/04e4d02d1ef356d25c06e3acbb897349680abc11/Documentation/pics/schematic%20view.png)
 
-
+this timing diagram describes the functionality of PHY block
+![alt text](https://github.com/abdelrhman-oun/DDR5_PHY_WriteOperation/blob/04e4d02d1ef356d25c06e3acbb897349680abc11/Documentation/pics/timing%20diagram.png)
 
